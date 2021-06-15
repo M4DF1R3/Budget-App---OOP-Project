@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Budget App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Budget App</h1>
+
+  <div class="budget-input">
+    <p class="enter-input">Enter Your Budget: <input id="budget-value" type="number" class="user-input-budget"></p>
+    <button id="submit-budget" class="submit">Submit</button>
+    
+  </div>
+
+  <div class="expense-input">
+    <p class="enter-input">Enter Your Expense: <input id="expense-input" type="word" class="user-input-expense"></p>
+
+    <p class="enter-input">Enter Your Expense Amount: <input id="expense-value" type="number" class="user-input-expense"></p>
+    <button id="submit-expense" class="submit">Submit</button> 
+    
+    <span id="user-feedback"></span>
+  </div>
+
+  <div class="btn">
+    <button id="load-user-input" class="submit">Load</button>
+    <button id="save-user-input" class="submit">Save</button>
+    <button id="clear-storage" class="submit">Clear</button>
+  </div>
+
+  <!-- App -->
+  <div class="col-1">
+    <h3 class="subtitle-budget">Budget</h6>
+    <h4 class="mt-2 budget" id="budget"><span class="budget-amt">$ </span><span id="budget-amount" class="budget-amt">0</span></h4>
+   </div>
+   <div class="col-2">
+    <h3 class="subtitle-expense">Expenses</h6>
+    <h4 class="mt-2 expense" id="expense"><span class="expense-amt">$ </span><span id="expense-amount" class="expense-amt">0</span></h4>
+   </div>
+   <div class="col-3">
+    <h3 class="subtitle-balance">Balance</h6>
+    <h4 class="mt-2 balance" id="balance"> <span>$ </span><span id="balance-amount">0</span></h4>
+    </div>
+
+    <div id="expense-container"></div>
+  <!-- Load JavaScript -->
+  <script src="main.js"></script>
+</body>
+
+</html>
